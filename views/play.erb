@@ -1,5 +1,7 @@
 <%= @name1%> vs. <%= @name2 %>
 
-<p><%= @name2%> has 12 points</p>
+<p><%= @name2%> currently has 12 hit points.</p>
 
-<a href="/attack" type="button">Hit Player 2</a>
+<form action="/attack">
+    <input type="submit" value="Hit <%= @name2%>">
+</form>
