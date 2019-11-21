@@ -16,4 +16,11 @@ describe '#hit_points' do
   end
 end
 
+describe '#attack' do
+  it 'damages player' do
+    expect(player2).to receive(:receive_damage)
+    player1.attack(player2)
+  end
+end
+
 end
