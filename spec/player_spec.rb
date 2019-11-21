@@ -23,4 +23,10 @@ describe '#attack' do
   end
 end
 
+describe '#receive_damage' do
+  it 'reduces players hit points' do
+    expect{ player2.receive_damage }.to change { player2.hit_points }.by(-10)
+  end
+end
+
 end
