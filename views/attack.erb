@@ -1,6 +1,9 @@
-You have gently nudged <%= @name2%>!
-
+<%= @player1.name%> nudged <%= @player2.name%>!
 
 <p>
-<%= @name2%> now has 2 points.
+<%= @player2.name%> now has <%= @player2.hit_points %> points.
 </p>
+
+<form action="/attack">
+    <input type="submit" value="Hit <%= @player2.name%>">
+</form>
